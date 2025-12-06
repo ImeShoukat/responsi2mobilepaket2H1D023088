@@ -117,7 +117,33 @@ Backend dibangun menggunakan Framework **CodeIgniter 4**. Berikut adalah dokumen
 
 ## Penjelasan Flutter
 ### Struktur Projek
-
+```text
+lib/
+├── bloc/
+│   ├── inventaris_bloc.dart    # Logic CRUD Inventaris
+│   ├── login_bloc.dart         # Logic Login
+│   ├── logout_bloc.dart        # Logic Logout
+│   └── registrasi_bloc.dart    # Logic Registrasi
+├── helpers/
+│   ├── api_url.dart            # Konstanta URL API
+│   ├── api.dart                # Helper HTTP Request
+│   ├── app_exception.dart      # Custom Error Handling
+│   └── user_info.dart          # Helper Shared Preferences
+├── model/
+│   ├── inventaris.dart         # Model Data Barang
+│   ├── login.dart              # Model Data Login
+│   └── registrasi.dart         # Model Data Registrasi
+├── ui/
+│   ├── inventaris_detail.dart  # Tampilan Detail Barang
+│   ├── inventaris_form.dart    # Tampilan Form (Tambah/Edit)
+│   ├── inventaris_page.dart    # Tampilan Dashboard
+│   ├── login_page.dart         # Tampilan Login
+│   └── registrasi_page.dart    # Tampilan Registrasi
+├── widget/
+│   ├── success_dialog.dart     # Widget Dialog Sukses
+│   └── warning_dialog.dart     # Widget Dialog Peringatan
+└── main.dart                   # Entry Point Aplikasi
+```
 
 ### Penjelasan Fungsi
 Berikut adalah penjelasan detail mengenai fungsi-fungsi utama dalam aplikasi beserta potongan kodenya.
